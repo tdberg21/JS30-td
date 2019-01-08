@@ -1,16 +1,18 @@
 :root {
   --base: #ffc600;
-  --spacing: 10px;
+  --padding: 10px;
   --blur: 0px;
+  --background: #193549;
+  --width: 800px;
 }
 
 body {
   text-align: center;
-  background: #193549;
+  background: var(--background);
   color: white;
   font-family: 'helvetica neue', sans-serif;
   font-weight: 100;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .controls {
@@ -18,13 +20,17 @@ body {
 }
 
 input {
-  width: 100px;
+  width: 80px;
 }
 
 img {
-  padding: var(--spacing);
+  padding: var(--padding);
   background: var(--base);
   filter: blur(var(--blur));
+}
+
+.width {
+  width: var(--width);
 }
 
 .highlight {

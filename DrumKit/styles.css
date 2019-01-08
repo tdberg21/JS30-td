@@ -1,7 +1,6 @@
 html {
   font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
-  background-size: cover;
+  background: url(https://www.all-creatures.org/articles/vegan-black-sheep.jpg);
 }
 
 body,html {
@@ -16,6 +15,8 @@ body,html {
   align-items: center;
   flex: 1;
   min-height: 100vh;
+  margin: 3rem auto;
+  width: 50%;
 }
 
 .key {
@@ -28,11 +29,7 @@ body,html {
   transition: all .07s ease;
   width: 10rem;
   text-align: center;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.6);
   text-shadow: 0 0 .5rem black;
 }
 
