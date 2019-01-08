@@ -40,12 +40,12 @@ body {
 }
 
 
-.panel1 { background-image:url(./rob99.png); }
-.panel2 { background-image:url(./katy.png); }
-.panel3 { background-image:url(./christy.png); }
-.panel4 { background-image:url(./dave.png); }
-.panel5 { background-image:url(./tory.png); }
-.panel6 { background-image:url(./maddy.png); }
+.panel1 { background-image:url(./assets/r99/rob99.png); }
+.panel2 { background-image:url(./assets/katy.png); }
+.panel3 { background-image:url(./assets/christy.png); }
+.panel4 { background-image:url(./assets/dave.png); }
+.panel5 { background-image:url(./assets/tory/tory.png); }
+.panel6 { background-image:url(./assets/maddy.png); }
 
 
 .panel > * {
@@ -82,11 +82,25 @@ body {
   font-size: 1em;
 }
 
+.panel button {
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 1em;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.panel button:hover {
+  cursor: pointer;
+}
+
 .panel p:nth-child(2) {
   font-size: 4em;
 }
 
 .panel.open {
-  font-size: 40px;
-  flex: 4;
+  font-size: 30px;
+  flex: 3;
 }
