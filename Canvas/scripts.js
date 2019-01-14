@@ -1,14 +1,14 @@
 const canvas = document.querySelector('#draw');
-console.log('ji')
+const button = document.querySelector('button');
 
 const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = 700;
+canvas.height = 500;
 let hue = 0;
 
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
-ctx.lineWidth = '50';
+ctx.lineWidth = '20';
 
 let isDrawing = false;
 let lastX = 0;
@@ -21,8 +21,7 @@ function draw (event) {
   ctx.moveTo(lastX, lastY);
   ctx.lineTo(event.offsetX, event.offsetY);
   ctx.stroke();
-  lastX = event.offsetX;
-  lastY = event.offsetY;
+  [lastX, lastY] = [event.offsetX, event.offsetY];
   hue++;
 }
 
@@ -32,4 +31,5 @@ canvas.addEventListener('mousedown', (event) => {
   [lastX, lastY] = [event.offsetX, event.offSetY]
 });
 canvas.addEventListener('mouseup', () => isDrawing = false);
-canvas.addEventListener('mouseout', () => isDrawing = false);
+// canvas.addEventListener('mouseout', () => isDrawing = false);
+button.addEventListener('click', () => ctx.clearRect(0, 0, 800, 800));

@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+  background-color: #BADA55;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+.canvas-container {
+  display: flex;
+}
+
+.canvas {
+  border: 1px solid black;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: aliceblue;
+}
