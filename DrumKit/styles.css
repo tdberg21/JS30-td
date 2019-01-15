@@ -16,7 +16,6 @@ body,html {
   flex: 1;
   min-height: 100vh;
   margin: 3rem auto;
-  width: 50%;
 }
 
 .key {
